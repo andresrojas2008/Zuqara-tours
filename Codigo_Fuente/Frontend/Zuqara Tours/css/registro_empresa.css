@@ -1,0 +1,40 @@
+body{
+    background:#1B4F72;
+}
+
+.caja-registro{
+    width:500px;
+    background:white;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+
+.logo-proyecto{
+    width:90px;
+    display:block;
+    margin:auto;
+    margin-bottom:20px;
+}
+
+.titulo{
+    text-align:center;
+    color:#1B4F72;
+    margin-bottom:25px;
+}
+
+.boton-registrar{
+    background:#2ECC71;
+    color:white;
+    font-weight:bold;
+}
+
+.boton-registrar:hover{
+    background:#28B463;
+    color:white;
+}
+
+a{
+    color:#F39C12;
+    text-decoration:none;
+}
