@@ -120,6 +120,55 @@ Construir un sistema de información web que mejore los procesos de recomendaci�
 
 #  Arquitectura
 
+zuqara_tours/
+│
+├── run.py
+├── config.py
+├── requirements.txt
+│
+└── app/
+    ├── __init__.py
+    │
+    ├── modelos/
+    │   ├── entidad_base.py
+    │   ├── persona.py
+    │   ├── usuario.py
+    │   ├── operador_turistico.py
+    │   ├── destino.py
+    │   ├── itinerario.py
+    │   ├── comentario.py
+    │   └── calificacion.py
+    │
+    ├── controladores/
+    │   ├── auth.py
+    │   ├── destinos.py
+    │   ├── itinerarios.py
+    │   ├── operador.py
+    │   └── admin.py
+    │
+    ├── plantillas/
+    │   ├── base.html
+    │   ├── index.html
+    │   ├── destinos.html
+    │   ├── itinerario.html
+    │   └── admin/
+    │       ├── dashboard.html
+    │       ├── usuarios.html
+    │       └── reportes.html
+    │
+    ├── servicios/
+    │   ├── servicio_usuario.py
+    │   └── servicio_itinerario.py
+    │
+    ├── estaticos/
+    │   ├── css/
+    │   │   └── estilos.css
+    │   ├── js/
+    │   └── img/
+    │
+    └── utils/
+        └── validaciones.py
+
 La implementación de la arquitectura Modelo-Vista-Controlador (MVC) en el proyecto Zuqara Tours se justifica por la necesidad de construir una plataforma ágil, ordenada y altamente escalable,
 capaz de soportar el crecimiento del negocio turístico sin comprometer la experiencia del usuario. Al separar la lógica de negocio (como el control de cupos y tarifas en el Modelo),
 la interfaz gráfica (donde los viajeros descubren y reservan los destinos en la Vista) y la gestión de peticiones (el Controlador), el sistema gana una independencia operativa total.
