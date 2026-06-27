@@ -152,25 +152,25 @@ teniendo en uenta esto facilita la comunicacion y mejora la organizacion de trab
 #  Tecnologías
 
 ## Backend
-
-- Node.js
-- Express.js
-
+-Python
+-Flask
+-Flask Blueprints (para la organización de los controladores)
 ## Frontend
-
-- HTML5
-- CSS3
-- JavaScript
-
+-HTML5
+-Jinja2 (motor de plantillas de Flask)
+-CSS3
+-JavaScript
 ## Base de datos
-
-- MySQL
-
+-PostgreSQL
+-SQLAlchemy ORM
+## APIs y servicios externos
+-API REST
+-Pasarela de pagos: PSE, Tarjeta y Wompi
+-Mapas: Google Maps u OpenStreetMap
+-Notificaciones: Email y SMS
 ## Control de versiones
-
-- Git
-- GitHub
-
+-Git
+-GitHub
 ---
 
 #  Alcance
