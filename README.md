@@ -1,111 +1,214 @@
-## [Turismo] - Proyecto Zuqara Tours
+# 🌎 Zuqara Tours
 
-- ¿Cuales son los roles de cada integrante del proyecto?
-
-Sergio/ Líder de proyecto: encargado de coordinar al equipo tomar decisiones  técnicas, revisar que todo esté completo y actualizar el tablero, también ayuda a completar los archivos y ayudar a los desarrolladores.
-
-Andres/ desarrollador backend y documentador: encargado de evidencias de comunicación css responsive, diccionario de datos y control de cambios.
-
-Daniel/Analista y desarrollador FrontEnd: Encargado de actas, historias de usuario, HTML y Diagramas de actividades. 
-
-- ¿Qué Problema Resuelve?
-
-Actualmente, la información sobre viajes suele estar dispersa en diferentes páginas web,
- redes sociales o agencias. A veces los precios no son claros,
- los servicios no están bien explicados y las opiniones de otros viajeros no son fáciles de verificar.Esta problemática 
- afecta principalmente a jóvenes mayores de edad,
- adultos y empresas que necesitan organizar viajes personales o laborales. 
-
-
-- ¿Qué necesidad cubre tu sistema
-
-Si esta situación no se soluciona, las personas seguirán perdiendo tiempo buscando información en diferentes sitios,
- tomando decisiones con poca claridad y arriesgándose a vivir malas experiencias por falta de orientación adecuada.
- Además, se limita la posibilidad de que los usuarios compartan sus opiniones para ayudar a otros viajeros.
-
-
-- ¿Quiénes lo usarán?
-
-principalmente a jóvenes mayores de edad,
- adultos y empresas que necesitan organizar viajes personales o laborales.También, 
-quienes no tienen experiencia planeando viajes y necesitan una guía más sencilla y práctica.
- 
-
-- ¿Por qué es importante?
-
-
- consideramos importante desarrollar Zuqara Tours, ya que busca ofrecer una plataforma web donde los usuarios
- puedan consultar destinos, planificar sus viajes y dejar comentarios o reseñas sobre su experiencia.
- El proyecto es relevante porque responde a la necesidad actual de tener herramientas digitales que simplifiquen
- procesos y mejoren la organización de la información.
+Aplicativo web para la planificación, recomendación y reserva de tours turísticos.
 
 ---
 
-## Usuarios Principales
+#  Integrantes del proyecto
 
-Lista los tipos de usuarios (mínimo 2):
-
-1. [administrador de viaje]:Crea perfil de empresa, modifica perfil, recibe opiniones de turistas.
-modifica y elimina los tours, paga suscripcion para crear los tours, se comunica con el turista 
-
-2. [turista]:Inicia sesion como usuario y crea cuenta,Da opiniones sobre los tours,
-busca viajes, programa los tours, modifica perfil, ve informacion sobre los tours
-paga los tours, se comunica con la empresa 
-
-3. [admin]:Gestiona usuarios, supervisa administradores de viajes, administra pagos o suscripciones,
-genera reportes, configura parametros del sistema
+| Integrante | Rol | Responsabilidades |
+|------------|-----|-------------------|
+| Sergio Enrique González Salinas | Líder del proyecto | Coordinar el equipo, tomar decisiones técnicas, supervisar avances y apoyar el desarrollo. |
+| Andrés Felipe Rojas Pagote | Backend y Documentación | Desarrollo del backend, base de datos, documentación técnica, control de cambios y evidencias. |
+| Daniel Felipe Rodríguez Henao | Frontend y Análisis | Desarrollo de interfaces, diagramas, historias de usuario y documentación funcional. |
 
 ---
 
-## Funcionalidades Principales
+#  Descripción del proyecto
 
-Lista 5-7 funcionalidades clave:
+Zuqara Tours es un aplicativo web diseñado para centralizar la información de tours turísticos en una única plataforma.
 
-- [ ] Registro e inicio de sesión
-- [ ] Proceso de pago
-- [ ] Charla entre empresa y turista
-- [ ] Crea o contrata un tour o varios tours
-- [ ] obtiene o actualiza informacion de los tours
-- [ ] recibe opinion u opina sobre los tours
+Su principal innovación consiste en recomendar automáticamente los tours más adecuados para cada usuario teniendo en cuenta características como:
 
----
+- Edad
+- Movilidad
+- Viaje con niños
+- Viaje con adultos mayores
+- Nivel de dificultad física
+- Preferencias de comodidad
+- Accesibilidad
+- Seguridad
 
-## Decisiones Iniciales
-
-
-
-### Metodología de Desarrollo
-
-Elegí: [Scrum]
-
-
-¿Por qué?:
-
-La metodología Scrum se adapta adecuadamente al proyecto Suqara Tours debido a que el
-sector turístico requiere actualizaciones constantes y una rápida adaptación a las necesidades de los
-usuarios.
-
-### Arquitectura Inicial
-
-Elegí:
-
-¿Por qué?: 
-
-### Tecnologías
-
-- **Backend**: Node.js (es versatil y estamos aprendiendo a usarlo dia tras dia para nuestro proyecto)
-
-- **Base de datos**: MySQL (por ser un sistema de gestión de bases de datos relacionales
-(RDBMS) de código abierto, gratuito, rápido y altamente fiable)
-
-- **Frontend**: CSS y HTML (constituyen la base esencial del desarrollo web, permitiendo estructurar
-(HTML) y diseñar (CSS) sitios web funcionales, atractivos y adaptable)
+De esta manera los usuarios pueden reservar experiencias realmente compatibles con sus necesidades.
 
 ---
 
-**Autor**: Sergio Gonzalez, Andres Rojas, Daniel Henao 
-**Fecha**: abril 25 del 2026
-**Bootcamp**: Arquitectura de Software - SENA
+#  Problema que resuelve
+
+Actualmente muchas plataformas de turismo únicamente permiten visualizar y reservar paquetes turísticos.
+
+Sin embargo:
+
+- No consideran las condiciones físicas del viajero.
+- No indican el nivel de accesibilidad.
+- No ayudan a seleccionar el tour más adecuado.
+- No apoyan suficientemente a pequeños operadores turísticos.
+- Pueden generar malas experiencias por incompatibilidad entre el usuario y el tour.
+
+---
+
+#  Objetivo General
+
+Construir un sistema de información web que mejore los procesos de recomendación, accesibilidad y reserva de tours turísticos mediante un sistema inteligente basado en el perfil del usuario.
+
+---
+
+#  Usuarios del sistema
+
+## Turista
+
+- Registrarse
+- Iniciar sesión
+- Buscar tours
+- Recibir recomendaciones
+- Reservar tours
+- Realizar pagos
+- Calificar experiencias
+- Editar perfil
+- Comunicarse con operadores
+
+---
+
+## Operador Turístico
+
+- Crear empresa
+- Publicar tours
+- Modificar tours
+- Gestionar reservas
+- Responder comentarios
+- Administrar su perfil
+- Gestionar suscripción
+
+---
+
+## Administrador
+
+- Gestionar usuarios
+- Gestionar operadores turísticos
+- Supervisar publicaciones
+- Administrar pagos
+- Configurar el sistema
+- Generar reportes
+
+---
+
+#  Funcionalidades principales
+
+- Registro e inicio de sesión
+- Gestión de perfiles
+- Publicación de tours
+- Recomendación inteligente según perfil
+- Sistema de accesibilidad
+- Reserva de tours
+- Pasarela de pagos
+- Sistema de calificaciones
+- Comentarios y opiniones
+- Comunicación entre turistas y operadores
+
+---
+
+#  Características diferenciadoras
+
+- Recomendación personalizada.
+- Compatibilidad entre usuario y tour.
+- Información de accesibilidad.
+- Inclusión de personas con movilidad reducida.
+- Apoyo a pequeños operadores turísticos.
+- Mejor experiencia para el viajero.
+
+---
+
+#  Arquitectura
+
+Se implementará una arquitectura por capas:
+
+- Presentación
+- Lógica de negocio
+- Acceso a datos
+- Base de datos
+
+Esto facilita el mantenimiento, escalabilidad y reutilización del sistema.
+
+---
+
+#  Metodología
+
+## Scrum
+
+Se utiliza Scrum debido a que permite:
+
+- Desarrollo incremental.
+- Entregas continuas.
+- Adaptación a cambios.
+- Organización mediante Sprints.
+- Trabajo colaborativo.
+
+---
+
+#  Tecnologías
+
+## Backend
+
+- Node.js
+- Express.js
+
+## Frontend
+
+- HTML5
+- CSS3
+- JavaScript
+
+## Base de datos
+
+- MySQL
+
+## Control de versiones
+
+- Git
+- GitHub
+
+---
+
+#  Alcance
+
+El sistema permitirá:
+
+- Registro de usuarios
+- Registro de empresas
+- Publicación de tours
+- Recomendaciones inteligentes
+- Gestión de reservas
+- Pagos
+- Opiniones
+- Calificaciones
+
+No contempla actividades fuera del proceso de gestión turística definido en el proyecto.
+
+---
+
+#  Estado del proyecto
+
+ En desarrollo
+
+Actualmente se encuentra en fase de construcción del sistema conforme al anteproyecto y a la especificación de requerimientos.
+
+---
+
+#  Proyecto académico
+
+**Tecnólogo en Análisis y Desarrollo de Software**
+
+Servicio Nacional de Aprendizaje - SENA
+
+Ficha: **3407179**
+
+---
+
+## Autores
+
+- Sergio Enrique González Salinas
+- Andrés Felipe Rojas Pagote
+- Daniel Felipe Rodríguez Henao
 
 
 
