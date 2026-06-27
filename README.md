@@ -120,61 +120,17 @@ Construir un sistema de información web que mejore los procesos de recomendaci�
 
 #  Arquitectura
 
-zuqara_tours/
-│
-├── run.py
-├── config.py
-├── requirements.txt
-│
-└── app/
-    ├── __init__.py
-    │
-    ├── modelos/
-    │   ├── entidad_base.py
-    │   ├── persona.py
-    │   ├── usuario.py
-    │   ├── operador_turistico.py
-    │   ├── destino.py
-    │   ├── itinerario.py
-    │   ├── comentario.py
-    │   └── calificacion.py
-    │
-    ├── controladores/
-    │   ├── auth.py
-    │   ├── destinos.py
-    │   ├── itinerarios.py
-    │   ├── operador.py
-    │   └── admin.py
-    │
-    ├── plantillas/
-    │   ├── base.html
-    │   ├── index.html
-    │   ├── destinos.html
-    │   ├── itinerario.html
-    │   └── admin/
-    │       ├── dashboard.html
-    │       ├── usuarios.html
-    │       └── reportes.html
-    │
-    ├── servicios/
-    │   ├── servicio_usuario.py
-    │   └── servicio_itinerario.py
-    │
-    ├── estaticos/
-    │   ├── css/
-    │   │   └── estilos.css
-    │   ├── js/
-    │   └── img/
-    │
-    └── utils/
-        └── validaciones.py
+Arquitectura Inicial Elegida: Arquitectura MVC (Modelo - Vista - Controlador)
 
-La implementación de la arquitectura Modelo-Vista-Controlador (MVC) en el proyecto Zuqara Tours se justifica por la necesidad de construir una plataforma ágil, ordenada y altamente escalable,
-capaz de soportar el crecimiento del negocio turístico sin comprometer la experiencia del usuario. Al separar la lógica de negocio (como el control de cupos y tarifas en el Modelo),
-la interfaz gráfica (donde los viajeros descubren y reservan los destinos en la Vista) y la gestión de peticiones (el Controlador), el sistema gana una independencia operativa total.
-Esto significa que el equipo puede renovar por completo el diseño visual de la web para campañas de temporada sin alterar el motor de reservas subyacente,
-o bien integrar nuevas pasarelas de pago y proveedores de servicios sin riesgo de romper lo que ya funciona. En definitiva, MVC optimiza los tiempos de desarrollo al permitir el trabajo en paralelo,
-reduce drásticamente los costos de mantenimiento técnico a largo plazo y garantiza que la plataforma de Zuqara Tours sea lo suficientemente flexible para evolucionar al ritmo del mercado turístico.  
+¿Por qué?
+
+Para el desarrollo de Zuqara Tours se eligió la arquitectura MVC (Modelo - Vista - Controlador) porque permite organizar el sistema de forma clara y estructurada, separando las responsabilidades de cada componente:
+
+Modelo: administra la información relacionada con los usuarios, paquetes turísticos, reservas y demás datos del sistema.
+Vista: presenta la interfaz gráfica con la que interactúan los clientes y administradores de Zuqara Tours.
+Controlador: procesa las solicitudes de los usuarios, coordina la comunicación entre la Vista y el Modelo, y gestiona la lógica de negocio.
+
+Esta arquitectura facilita el mantenimiento, la escalabilidad y el desarrollo colaborativo del proyecto, permitiendo que Zuqara Tours pueda incorporar nuevas funcionalidades, como métodos de pago, promociones o nuevos servicios turísticos, sin afectar el funcionamiento de los demás módulos del sistema.
 
 ---
 
