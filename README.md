@@ -1,4 +1,4 @@
-# 🌎 Zuqara Tours
+# Zuqara Tours
 
 Aplicativo web para la planificación, recomendación y reserva de tours turísticos.
 
@@ -120,14 +120,12 @@ Construir un sistema de información web que mejore los procesos de recomendaci�
 
 #  Arquitectura
 
-Se implementará una arquitectura por capas:
-
-- Presentación
-- Lógica de negocio
-- Acceso a datos
-- Base de datos
-
-Esto facilita el mantenimiento, escalabilidad y reutilización del sistema.
+La implementación de la arquitectura Modelo-Vista-Controlador (MVC) en el proyecto Zuqara Tours se justifica por la necesidad de construir una plataforma ágil, ordenada y altamente escalable,
+capaz de soportar el crecimiento del negocio turístico sin comprometer la experiencia del usuario. Al separar la lógica de negocio (como el control de cupos y tarifas en el Modelo),
+la interfaz gráfica (donde los viajeros descubren y reservan los destinos en la Vista) y la gestión de peticiones (el Controlador), el sistema gana una independencia operativa total.
+Esto significa que el equipo puede renovar por completo el diseño visual de la web para campañas de temporada sin alterar el motor de reservas subyacente,
+o bien integrar nuevas pasarelas de pago y proveedores de servicios sin riesgo de romper lo que ya funciona. En definitiva, MVC optimiza los tiempos de desarrollo al permitir el trabajo en paralelo,
+reduce drásticamente los costos de mantenimiento técnico a largo plazo y garantiza que la plataforma de Zuqara Tours sea lo suficientemente flexible para evolucionar al ritmo del mercado turístico.  
 
 ---
 
@@ -142,6 +140,7 @@ Se utiliza Scrum debido a que permite:
 - Adaptación a cambios.
 - Organización mediante Sprints.
 - Trabajo colaborativo.
+teniendo en uenta esto facilita la comunicacion y mejora la organizacion de trabajos del equipo de proyecto
 
 ---
 
